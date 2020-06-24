@@ -33,6 +33,13 @@ Inheritence child class uses parent class methods properties using extends
    synchronized(multithreading) 
    
    
+   SUPER 
+   super() refers to default constructor of Parent. If you code a constructor with data in Parent then you 
+   call super with the data in constructor of Child class.
+   
+   That's where you want to use protected. When you want only inherited classes to be able to access 
+   your class. It's a neat little way to hide stuff from unrelated classes
+   
   
 
 
