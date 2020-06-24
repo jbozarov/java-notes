@@ -24,8 +24,15 @@ Inheritence child class uses parent class methods properties using extends
    aggregation 
    School is a Building, School has a library 
    
+   subclass is a class which is inheriting from parent class 
+   super class parent class which is being inherited class 
    
-   Access modifiers private public protected package 
+   
+   Access modifiers 
+   private ( available in class only use getter and setters ) 
+   public ( available in entire project ) 
+   protected ( availble in class, subclass 
+   package 
    Non access modifiers 
    static no instance
    final const in js
