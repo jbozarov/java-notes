@@ -11,20 +11,23 @@
 
 
     Concrete method is method has a body definition, opposite of abstract method 
+    
+    Encapsulation => declaring variable private and using getters and setters 
 
-    Abstaraction defining method without body and whoever wants to use they can define the method body and use it 100% abstraction is Interfaces 
+    Abstaraction => defining method without body and whoever wants to use they can define the method body and use it 100% abstraction is Interfaces 
 
-    Polymorphism using same method multiple times from child classes to 
+    Polymorphism => using same method multiple times from child classes, method overloading and method overriding 
 
-    Inheritence child class uses parent class methods properties using extends 
+    Inheritence => child class uses parent class methods properties using extends 
 
 
        Association => One class is related to another class
        IS A => inheritance Car IS A vehicle, Dog IS A(n) Animal
        HAS A => Car HAS A Engine 
-       composition 
+       composition ( instead of creating variable we define the other class instance and pass them as parameter of constructor class good example: https://github.com/JBozarov/Java_Composition.java
        aggregation 
        School is a Building, School has a library 
+
 
        subclass is a class which is inheriting from parent class 
        super class parent class which is being inherited class 
