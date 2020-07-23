@@ -70,3 +70,19 @@ and how the steps of a task are divided among different objects. Where Creationa
 and Structural patterns describe a more or less static structure, Behavioral patterns describe a process or a flow                                               
 
 
+
+Let's say classA is dependent on classB. we can create instance of Class B inside a ClassA
+ClassB objB = new ClassB(); 
+Everything seems to be working fine, but the problem is each instance of ClassA is using objB only.
+What if classB changes in the future? then we need to change ClassA too. That's why it is called tight coupling.
+So how can we fix that? Using dependency injection.
+So dependency injection is instead of using new instance of ClassB which is objB, we put ClassB as a parameter of ClassA
+constructor:
+public ClassA (String name, ..., ClassB objB ) {
+this.name = name; 
+..., 
+this.objectOfClassB = objB
+}
+so that we we loosely coupled.
+Now we don't have to change ClassA if we change ClassB, because every time we ClassA takes different instance of ClassB
+Instead of instantiating class inside another class using new keyword, class takes it as constructor parameter, so every time we can pass different version of ClassB=> this is called dependency injection.
