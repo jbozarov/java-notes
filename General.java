@@ -86,3 +86,18 @@ this.objectOfClassB = objB
 so that we we loosely coupled.
 Now we don't have to change ClassA if we change ClassB, because every time we ClassA takes different instance of ClassB
 Instead of instantiating class inside another class using new keyword, class takes it as constructor parameter, so every time we can pass different version of ClassB=> this is called dependency injection.
+
+   Naming convensions: 
+     Interface => don't start with I ( wrong ) 
+     Interface name has to be same as class name: ArrayList, List, Toy 
+     
+     Implementation: if you have one implementation put Impl ( stands for implementation ) 
+     But if you have more than one, put something that shows the difference
+        
+                                               
+                                               
+                                               
+                                               
+                                               
+                                               
+                                               
