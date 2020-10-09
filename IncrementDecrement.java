@@ -17,7 +17,6 @@ public class IncrementDecrement {
 		int y = 5; 
 		System.out.println(x++); // 5 because it displays x first and increments, see next line as proof:
 		System.out.println(x);  // 6
-		
 		System.out.println(++y); // 6 it increments first and then displays so we got 6
 		
 	}
