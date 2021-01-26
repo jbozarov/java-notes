@@ -54,7 +54,11 @@ This command compiles the java source classes of the maven project.
     $
 
 ## 3. mvn compiler:testCompile
-This command compiles the test classes of the maven project.
+This command compiles the test classes of the maven project. Compiling includes following steps: 
+    1. App.java -> App.class <br/>
+    2. AppTest.java -> AppTest.class <br/>
+    3. Run tests <br/>
+    4. Create jar <br/>
 
     ```
     $ mvn compiler:testCompile
@@ -102,7 +106,7 @@ This command builds the maven project and packages them into a JAR, WAR, etc.
 
 
 ## 5. mvn install
-This command builds the maven project and installs the project files (JAR, WAR, pom.xml, etc) to the local repository.
+This command builds the maven project and installs the project files (JAR, WAR, pom.xml, etc) to the local repository. It will be in .m2 folder: C:\Users\someUserName\.m2\repository\com\tekcamp\apiDemo
 
     ```
     $ mvn install
