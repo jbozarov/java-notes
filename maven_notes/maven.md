@@ -54,7 +54,7 @@ This command compiles the java source classes of the maven project.
     $
 
 ## 3. mvn compiler:testCompile
-This command compiles the test classes of the maven project. Compiling includes following steps: 
+This command compiles the test classes of the maven project. Compiling includes following steps: <br/>
     1. App.java -> App.class <br/>
     2. AppTest.java -> AppTest.class <br/>
     3. Run tests <br/>
