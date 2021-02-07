@@ -15,16 +15,30 @@ public class Main {
         System.out.println(book.toString()); // Book is, id: 1 name is Book name
 
         Book bookNameEmpty = Book.getBook().withSetName(null).withSetId(1).build();
-        Optional<String> idOptional = Optional.of(bookNameEmpty.getName());
-        System.out.println(idOptional.toString()); // we get NullPointerException
+        Optional<String> ofOptional = Optional.ofNullable(bookNameEmpty.getName());
+        System.out.println(ofOptional.toString()); // we get NullPointerException
 
-        Optional<Book> bookNameNullOptional = Optional.of(bookNameEmpty);
-        Book mightBeEmpty = bookNameNullOptional.stream().filter(v -> v.getId() == 1).filter(n -> n.getName().length() > 0).findAny().orElse(book); // throws NullPointerException
+        Optional<String> ofNullableOptional = Optional.ofNullable(bookNameEmpty.getName());
+        System.out.println(ofNullableOptional); // We get Optional.empty
+
+        String BOOK_IS_EMPTY = "Book is empty";
+        String ofNullableOrElse = Optional.ofNullable(bookNameEmpty.getName()).orElse(BOOK_IS_EMPTY);
+        System.out.println(ofNullableOrElse); // Book is empty
 
 
         // If we know the object we are passing has a null value, then we can use ofNullable:
         Optional<String> nameOptional = Optional.ofNullable(bookNameEmpty.getName());
         System.out.println(nameOptional); // Optional.empty
+
+
+        // Now we can check if it is empty or present:
+        if (nameOptional.isPresent()) {
+            System.out.println("Present"); // Nothing because nameOptional is not present
+        }
+
+        if (nameOptional.isEmpty()) {
+            System.out.println("Empty"); // Empty
+        }
 
     }
 }
