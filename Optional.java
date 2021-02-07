@@ -37,6 +37,7 @@ public class Main {
         }
 
         if (nameOptional.isEmpty()) {
+            System.out.println(nameOptional.orElse("Default book name")); // Optional[Default book name]
             System.out.println("Empty"); // Empty
         }
 
