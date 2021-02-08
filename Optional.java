@@ -43,7 +43,11 @@ public class Main {
 
         Book bookWithLowerCase = Book.getBook().withSetId(2).withSetName("this is books lowercase name").build();
 
-        System.out.println(Optional.ofNullable(bookWithLowerCase.getName()).stream().map(String::toUpperCase).findAny().orElseThrow(() -> new NullPointerException("Class not found"))); // if null throws NullPointerException otherwise throws THIS IS BOOKS LOWERCASE NAME
+        System.out.println(Optional.ofNullable(bookWithLowerCase.getName())
+                           .stream()
+                           .map(String::toUpperCase)
+                           .findAny()
+                           .orElseThrow(() -> new NullPointerException("Class not found"))); // if null throws NullPointerException otherwise throws THIS IS BOOKS LOWERCASE NAME
 
     }
 }
