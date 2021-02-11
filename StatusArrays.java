@@ -6,6 +6,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class StatusArrays {
+    
+    public static void main(String[] args) {
+        int[] n = {6, 9, 3, 8, 2, 3, 1};
+        System.out.println(Arrays.toString(status(n)));
+    }
+
     public static int[] status(int[] nums) {
 
         List<Integer> list = Arrays.stream(nums).boxed().collect(Collectors.toList());
