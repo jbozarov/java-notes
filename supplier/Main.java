@@ -16,5 +16,14 @@ public class Main {
         List<Integer> emptyList = List.of();
 
 
+        Supplier<Integer> sup = new Supplier<Integer>() {
+            @Override
+            public Integer get() {
+                return 122;
+            }
+        };
+
+        System.out.println(emptyList.stream().findAny().orElseGet(sup)); // 12, because it cannot find any
+
     }
 }
