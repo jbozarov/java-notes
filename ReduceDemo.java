@@ -40,6 +40,11 @@ public class ReduceDemo {
         // return method reference without inital value ( Optional )
         Integer maxValueMethodRefOptional = nums.stream().reduce(ReduceDemo::findMaxOptional).get(); 
         System.out.println(maxValueMethodRefOptional); // null
+        
+        
+        // return method reference without inital value ( Optional )
+        Optional<Integer> maxValueMethodRefOptional = Optional.of(nums.stream().reduce(ReduceDemo::findMaxOptional).orElse(15));
+        System.out.println(maxValueMethodRefOptional); // null
     }
     
     
