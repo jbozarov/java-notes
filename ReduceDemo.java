@@ -21,6 +21,13 @@ public class ReduceDemo {
         // We can create method and pass it into stream reduce
         Integer resultOfFunction = nums.stream().reduce(20, ReduceDemo::reduceFunction);
         System.out.println(resultOfFunction);  // 23
+        
+        // if we don't specify initial value which is first argument, then it will return Optional because there
+        // might be a null return:
+        Optional<Integer> optionalInteger = nums.stream().reduce(ReduceDemo::reduceFunction);
+        System.out.println(optionalInteger); // Optional[23]
+        System.out.println(optionalInteger.get()); // 23
+    }
     }
 
 
