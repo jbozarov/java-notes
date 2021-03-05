@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ReduceDemo {
 
-
+    // Reduce -> Aggregating the data 
     // T reduce (T identity, BinaryOperator<T> accumulator);
     // Identity is initial value of T
     // accumulator is a function for combining the values
