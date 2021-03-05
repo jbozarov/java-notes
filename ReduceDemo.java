@@ -31,8 +31,15 @@ public class ReduceDemo {
         // return the max value
         Integer maxValue = nums.stream().reduce(0, (a, b) -> a>b ? a : b);
         System.out.println(maxValue); // 7
+        
+        // return method reference for max value
+        Integer maxValueMethodRef = nums.stream().reduce(0, ReduceDemo::findMax);
+        System.out.println(maxValueMethodRef); // 7
     }
-  }
+
+        private static Integer findMax(Integer a, Integer b) {
+            return a > b ? a : b;
+        }
 
 
     public static Integer reduceFunction(int a, int b) {
