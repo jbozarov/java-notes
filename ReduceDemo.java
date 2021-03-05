@@ -41,14 +41,19 @@ public class ReduceDemo {
         Integer maxValueMethodRefOptional = nums.stream().reduce(ReduceDemo::findMaxOptional).get(); 
         System.out.println(maxValueMethodRefOptional); // null
     }
+    
+    
+        private static Integer findMaxOptional(Integer integer, Integer integer1) {
+            return null;
+        }
 
         private static Integer findMax(Integer a, Integer b) {
             return a > b ? a : b;
         }
 
 
-    public static Integer reduceFunction(int a, int b) {
-        return 23;
-    }
+        public static Integer reduceFunction(int a, int b) {
+            return 23;
+        }
 
 }
