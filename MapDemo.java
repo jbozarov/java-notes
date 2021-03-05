@@ -19,6 +19,11 @@ public class MapDemo {
 
         List<Integer> mapFunctionResult = nums.stream().map(MapDemo::mapFunction).collect(Collectors.toList());
         System.out.println(Arrays.toString(mapFunctionResult.toArray()));  // [23, 23, 23, 23, 23, 23, 23]
+        
+        //Optional
+        List<Integer> optionalList = (List<Integer>) nums.stream()
+                .filter(v -> v>0)
+                .map(MapDemo::optionalFunction);
     }
 
     public static Integer mapFunction(Integer val) {
