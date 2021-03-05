@@ -27,8 +27,12 @@ public class ReduceDemo {
         Optional<Integer> optionalInteger = nums.stream().reduce(ReduceDemo::reduceFunction);
         System.out.println(optionalInteger); // Optional[23]
         System.out.println(optionalInteger.get()); // 23
+        
+        // return the max value
+        Integer maxValue = nums.stream().reduce(0, (a, b) -> a>b ? a : b);
+        System.out.println(maxValue); // 7
     }
-    }
+  }
 
 
     public static Integer reduceFunction(int a, int b) {
