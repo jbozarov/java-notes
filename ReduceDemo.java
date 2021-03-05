@@ -35,6 +35,11 @@ public class ReduceDemo {
         // return method reference for max value
         Integer maxValueMethodRef = nums.stream().reduce(0, ReduceDemo::findMax);
         System.out.println(maxValueMethodRef); // 7
+        
+        
+        // return method reference without inital value ( Optional )
+        Integer maxValueMethodRefOptional = nums.stream().reduce(ReduceDemo::findMaxOptional).get(); 
+        System.out.println(maxValueMethodRefOptional); // null
     }
 
         private static Integer findMax(Integer a, Integer b) {
