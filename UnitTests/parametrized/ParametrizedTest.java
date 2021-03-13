@@ -8,19 +8,24 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 
 public class ParametrizedTest {
+    
+    private PrimeNumberChecker sut;
+
+    @Before
+    public void setUp() {
+        sut = new PrimeNumberChecker();
+    }
 
 
     // Regular tests
     @Test
     public void testPrimeNumber() {
-        PrimeNumberChecker sut = new PrimeNumberChecker();
         boolean result = sut.validate(13);
         Assertions.assertTrue(result);
     }
 
     @Test
     public void testPrimeNumberFalse() {
-        PrimeNumberChecker sut = new PrimeNumberChecker();
         boolean result = sut.validate(14);
         Assertions.assertFalse(result);
     }
