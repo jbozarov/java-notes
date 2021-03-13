@@ -25,6 +25,14 @@ public class ParametrizedTest {
         Assertions.assertFalse(result);
     }
   
+    
+    // Parametrized test
+    @ParameterizedTest
+    @ValueSource(ints = {10, 20, 60, 4, 8, 14})
+    public void testIsEvenNumber(int number) {
+        PrimeNumberChecker sut = new PrimeNumberChecker();
+        Assertions.assertTrue(sut.isEvenNumber(number));
+    }
   
   
   
