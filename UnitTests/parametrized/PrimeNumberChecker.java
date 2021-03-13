@@ -10,4 +10,9 @@ public class PrimeNumberChecker {
         }
         return true;
     }
+    
+    
+    public Boolean isEvenNumber(final Integer number) {
+        return number % 2 == 0;
+    }
 }
