@@ -1,7 +1,11 @@
 import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
 
 public class ParametrizedTest {
 
@@ -11,14 +15,14 @@ public class ParametrizedTest {
     public void testPrimeNumber() {
         PrimeNumberChecker sut = new PrimeNumberChecker();
         boolean result = sut.validate(13);
-        assertTrue(result);
+        Assertions.assertTrue(result);
     }
 
     @Test
     public void testPrimeNumberFalse() {
         PrimeNumberChecker sut = new PrimeNumberChecker();
         boolean result = sut.validate(14);
-        assertFalse(result);
+        Assertions.assertFalse(result);
     }
   
   
