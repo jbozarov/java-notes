@@ -35,6 +35,12 @@ public class ParametrizedTest {
     }
   
   
+    @ParameterizedTest
+    @ValueSource(ints = {11, 21, 61, 41, 81, 9})
+    public void testIsEvenNumberFalse(int number) {
+        PrimeNumberChecker sut = new PrimeNumberChecker();
+        Assertions.assertFalse(sut.isEvenNumber(number));
+    }
   
   
 }
