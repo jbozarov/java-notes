@@ -15,15 +15,18 @@ public class Main {
         Project p4 = new Project(4, "Cristian", "Alpha project");
         Project p5 = new Project(5, "Jahongir", "Alpha project");
 
-        List<Project> projects = List.of(p1, p2, p3, p4, p5);
+        List<Project> projects = new ArrayList<>();
+        projects.add(p1);
+        projects.add(p2);
+        projects.add(p3);
+        projects.add(p4);
+        projects.add(p5);
 
-
-        System.out.println(Arrays.toString(Arrays.stream(projects.toArray()).toArray()));
-
+        System.out.println(Arrays.toString(projects.stream().map(v -> v.getName()).toArray()));
 
         List<Project> newProjects = sortProjectByName(projects);
 
-        System.out.println(Arrays.toString(newProjects.toArray()));
+        System.out.println(Arrays.toString(projects.stream().map(v -> v.getName()).toArray()));
 
     }
 
