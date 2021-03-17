@@ -234,7 +234,7 @@ It’s used to compile the source Java classes of the project.
 
 
 ## 14. mvn verify
-## mvn verify -DskipTests - skipping tests
+#### mvn verify -DskipTests - skipping tests
 This command build the project, runs all the test cases and run any checks on the results of the integration tests to ensure quality criteria are met.
 
 Maven Options
