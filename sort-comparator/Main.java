@@ -22,11 +22,11 @@ public class Main {
         projects.add(p4);
         projects.add(p5);
 
-        System.out.println(Arrays.toString(projects.stream().map(v -> v.getName()).toArray()));
+        System.out.println(Arrays.toString(projects.stream().map(v -> v.getName()).toArray())); // [XYZ, George, Alpha, Cristian, Jahongir]
 
         List<Project> newProjects = sortProjectByName(projects);
 
-        System.out.println(Arrays.toString(projects.stream().map(v -> v.getName()).toArray()));
+        System.out.println(Arrays.toString(projects.stream().map(v -> v.getName()).toArray())); // [Alpha, Cristian, George, Jahongir, XYZ]
 
     }
 
