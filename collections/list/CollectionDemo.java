@@ -32,6 +32,9 @@ public class CollectionDemo {
         while (collectionIterator.hasNext()) {
             System.out.println(collectionIterator.next());
         }
+        
+        
+        values.stream().filter(v -> v.equals(5)).collect(Collectors.toList());
 
     }
 }
