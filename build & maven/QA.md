@@ -24,3 +24,30 @@ Docs: https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle
 * For the person building a project, this means that it is only necessary to learn a small set of commands to build any Maven project, and the POM will ensure they get the results they desired.
 
 * There are three built-in build lifecycles: **default**, **clean** and **site**. The **default** lifecycle handles your project deployment, the **clean** lifecycle handles project cleaning, while the **site** lifecycle handles the creation of your project's site documentation.
+
+  
+  #### Artifact is a jar,package is the namespace of your  classes
+  #### test -> unit tests 
+  #### verify -> runs the integration test 
+  #### 
+  
+  The Maven build lifecycle now includes the "integration-test" phase for running integration tests, which are run separately from the unit tests run during the "test" phase. It runs after "package", so if you run "mvn verify", "mvn install", or "mvn deploy", integration tests will be run along the way.
+  
+  
+ ### There are three major built-in Build Life Cycles:
+
+**default
+clean
+site**
+Each Build Lifecycle is Made Up of Phases
+
+For example the default lifecycle comprises of the following Build Phases:
+
+◾validate - validate the project is correct and all necessary information is available
+◾compile - compile the source code of the project
+◾test - test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+◾package - take the compiled code and package it in its distributable format, such as a JAR.
+◾integration-test - process and deploy the package if necessary into an environment where integration tests can be run
+◾verify - run any checks to verify the package is valid and meets quality criteria
+◾install - install the package into the local repository, for use as a dependency in other projects locally
+◾deploy - done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects.
