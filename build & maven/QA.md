@@ -38,7 +38,7 @@ Docs: https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle
 
 * **default**
 * **clean**
-* ** site**
+* **site**
 Each Build Lifecycle is Made Up of Phases
 
 For example the default lifecycle comprises of the following Build Phases:
