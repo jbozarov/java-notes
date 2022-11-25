@@ -39,3 +39,7 @@ because it uses primitive data type
 <br/><br/>
 
 can we use this and super together in java
+<br/><br/>
+
+super() calls the constructor of the parent class 
+this() calls the constructor of the same class 
