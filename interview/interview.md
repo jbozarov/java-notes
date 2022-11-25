@@ -30,4 +30,6 @@ public class Student {
 }
 ```
 
-fdg
+
+Why java is not 100% OOP ? 
+because it uses primitive data type 
