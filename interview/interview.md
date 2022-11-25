@@ -31,5 +31,11 @@ public class Student {
 ```
 
 
-Why java is not 100% OOP ? 
+Why java is not 100% OOP ? <br/><br/>
 because it uses primitive data type 
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+
+can we use this and super together in java
