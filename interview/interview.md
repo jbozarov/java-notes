@@ -1,6 +1,7 @@
 What is a Marker interface ? 
 
 it is an empty interface 
+why do we use it ? it is metadata for the class 
 
 
 Ojbect cloning ? 
