@@ -44,3 +44,24 @@ can we use this and super together in java
 
 super() calls the constructor of the parent class 
 this() calls the constructor of the same class 
+
+
+### Java pass by value or pass by variable
+
+``` 
+public class Example2 {
+    public static void main(String[] args) {
+        int val = 12;  
+        System.out.println(val);    // 12 
+        changer(val); 
+        System.out.println(val);   // 12 
+        // because, val is not changes, it is pass by value, if changer takes the reference then it would change val 
+    }
+
+
+    public static void changer(int a) {
+        a = 13;
+    }
+}
+```
+
